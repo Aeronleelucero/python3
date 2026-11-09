@@ -1,0 +1,44 @@
+{
+  "greetings": [
+    "hello",
+    "hi",
+    "hey",
+    "good morning",
+    "good afternoon"
+  ],
+  "faqs": [
+    {
+      "question": "What are your hours of operation?",
+      "answer": "We operate Monday through Friday from 9:00 AM to 6:00 PM IST.",
+      "topic": "business hours",
+      "keywords": ["hours", "open", "opening", "timings", "schedule", "closed", "close"],
+      "patterns": [
+        "\\b(business|working|office|opening|operating|support) (hours|times?)\\b",
+        "\\bwhen (are|r) (you|u|they|the offices?) (open|available)\\b",
+        "\\bwhat time\\b.*\\b(open|close|start|available)\\b",
+        "\\b(open|available) on (weekends?|saturdays?|sundays?)\\b"
+      ]
+    },
+    {
+      "question": "How do I submit my internship project?",
+      "answer": "You can submit your public GitHub repository link through your Student Workspace.",
+      "topic": "project submission",
+      "keywords": ["submit", "submission", "upload", "github", "repository", "repo"],
+      "patterns": [
+        "\\b(submit|upload|send|turn in|hand in)\\b.*\\b(project|code|repo|repository|work|assignment|task)\\b",
+        "\\bwhere\\b.*\\bsubmit\\b",
+        "\\bsubmission\\b"
+      ]
+    },
+    {
+      "question": "When will I receive my certificate?",
+      "answer": "Certificates are reviewed and issued within 3-5 business days after your code review.",
+      "topic": "certificates",
+      "keywords": ["certificate", "certification", "cert"],
+      "patterns": [
+        "\\bcertificat(e|es|ion)\\b",
+        "\\b(get|receive|issue|issued|download)\\b.*\\bcerts?\\b"
+      ]
+    }
+  ]
+}
